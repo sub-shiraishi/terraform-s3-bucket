@@ -14,3 +14,19 @@ variable "versioning_enabled" {
   type        = bool
   default     = true
 }
+
+variable "iam_username" {
+  type        = string
+  description = "IAM ユーザー名"
+}
+
+variable "iam_group_name" {
+  type        = string
+  description = "IAM グループ名"
+}
+
+variable "iam_policy_name" {
+  type        = string
+  description = "IAM　ポリシー名"
+}
+
