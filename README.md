@@ -28,7 +28,8 @@ Terraform によって以下の AWS リソースを作成します：
 ---
 ## ディレクトリ構成
 .
-├── main.tf # S3 バケット構成
+├── main.tf # main
+├── s3.tf # S3 バケット構成
 ├── iam.tf # IAM（ユーザー/グループ/ポリシー）
 ├── variables.tf # 入力変数の定義
 ├── outputs.tf # 出力値の定義
@@ -62,6 +63,7 @@ terraform apply
 | -------------------- | ------ | ---------------- | ------------- |
 | `aws_region`         | string | `ap-northeast-1` | AWS リージョン     |
 | `bucket_name`        | string | なし（必須）           | 作成する S3 バケット名 |
+| `environment`        | string | dev           |指定する環境名 |
 | `versioning_enabled` | bool   | true             | バージョニングの利用有無  |
 
 ### IAM

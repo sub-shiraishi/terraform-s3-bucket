@@ -9,6 +9,13 @@ variable "bucket_name" {
   type        = string
 }
 
+variable "environment" {
+  type        = string
+  default     = "dev"
+  description = "環境名（dev / stg / prod）"
+}
+
+
 variable "versioning_enabled" {
   description = "バージョニングの有効化"
   type        = bool
