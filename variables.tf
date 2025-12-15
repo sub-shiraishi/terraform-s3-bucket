@@ -37,3 +37,27 @@ variable "iam_policy_name" {
   description = "IAM　ポリシー名"
 }
 
+variable "project_name" {
+  type        = string
+  description = "リソース名のプレフィックス"
+}
+
+variable "vpc_cidr" {
+  type        = string
+  description = "メインVPCのCIDR"
+}
+
+variable "public_subnet_cidr" {
+  type        = string
+  description = "パブリックサブネットCID"
+}
+
+variable "public_subnet_az" {
+  type        = string
+  description = "パブリックサブネットAZ"
+}
+
+
+
+
+
