@@ -57,6 +57,15 @@ variable "public_subnet_az" {
   description = "パブリックサブネットAZ"
 }
 
+variable "private_subnet_cidr" {
+  type        = string
+  description = "プライベートサブネットCID"
+}
+
+variable "private_subnet_az" {
+  type        = string
+  description = "プライベートサブネットAZ"
+}
 
 
 
